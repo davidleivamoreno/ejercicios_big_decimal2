@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.math.BigInteger;
 
 public class FactorialTest {
-    
+
     @Test
     public void cuandoFactorial1234() {
 

@@ -51,18 +51,18 @@ public class InteresCompuesto {
     public BigDecimal calculaMontoFinal() {
         //TODO
 
-       // c = p(1 +r)^n
+        // c = p(1 +r)^n
         //Creo una variable para crear el porcentaje a r
-        BigDecimal cien=new BigDecimal(100.00);
-        BigDecimal percentager=r.divide(cien,3,RoundingMode.HALF_UP);
-        c=p.multiply(percentager.add(BigDecimal.ONE).pow(n));
+        BigDecimal cien = new BigDecimal(100.00);
+        BigDecimal percentager = r.divide(cien, 3, RoundingMode.HALF_UP);
+        c = p.multiply(percentager.add(BigDecimal.ONE).pow(n));
 
         return c;
     }
-    public String toString(){
-        return "El interes compuesto es: "+this.c.setScale(2,RoundingMode.HALF_UP);
-    }
 
+    public String toString() {
+        return "El interes compuesto es: " + this.c.setScale(2, RoundingMode.HALF_UP);
+    }
 
 
 }

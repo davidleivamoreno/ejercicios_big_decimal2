@@ -25,7 +25,7 @@ public class Factorial {
     }
 
     public Factorial(long n) {
-        if ( n >= 0)
+        if (n >= 0)
             this.n = n;
         else
             throw new RuntimeException("Valor " + n + " no permitido.");
@@ -33,28 +33,28 @@ public class Factorial {
 
     public BigInteger calcula() {
         //TODO
-        this.factorial=new BigInteger("1");
-        this.factorial=BigInteger.valueOf(1);
-        this.factorial=BigInteger.ONE;
-        for(long i=2;i<=this.n;i++){
-            this.factorial=this.factorial.multiply(BigInteger.valueOf(i));
+        this.factorial = new BigInteger("1");
+        this.factorial = BigInteger.valueOf(1);
+        this.factorial = BigInteger.ONE;
+        for (long i = 2; i <= this.n; i++) {
+            this.factorial = this.factorial.multiply(BigInteger.valueOf(i));
         }
         return this.factorial;
     }
 
-    public BigInteger calcula (int n){
-        this.factorial=new BigInteger("1");
-        this.factorial=BigInteger.valueOf(1);
-        this.factorial=BigInteger.ONE;
-        for(long i=2;i<=n;i++){
-            this.factorial=this.factorial.multiply(BigInteger.valueOf(i));
+    public BigInteger calcula(int n) {
+        this.factorial = new BigInteger("1");
+        this.factorial = BigInteger.valueOf(1);
+        this.factorial = BigInteger.ONE;
+        for (long i = 2; i <= n; i++) {
+            this.factorial = this.factorial.multiply(BigInteger.valueOf(i));
         }
         return this.factorial;
     }
 
-   @Override
-   public String toString (){
-        return "El factorial es "+calcula();
+    @Override
+    public String toString() {
+        return "El factorial es " + calcula();
     }
 
 }
