@@ -1,9 +1,23 @@
 package org.iesvdm.haversine;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.math.RoundingMode;
+
+
 public class haversineTest {
-    Posicion Igualada = new Posicion(41.57879F,  1.617221F);
-   Posicion Granada = new Posicion(37.176487F, -3.597929F);
-    float distancia =
-            Igualada.DistanciaKm(Granada);
-  Assert.AreEqual(664.0D, System.Math.Round(distancia);
-}
+    @Test
+    public void cuandoDistanciaGranada(){
+    BigDecimal lat1=new BigDecimal(41.57879);
+    BigDecimal long1=new BigDecimal(1.617221);
+    BigDecimal lat2=new BigDecimal(37.176487F);
+    BigDecimal long2=new BigDecimal(-3.597929);
+    Posicion Igualada = new Posicion(lat1,  long1);
+   Posicion Granada = new Posicion(lat2, long2);
+   BigDecimal distancia =(Igualada.distanciaKM(Igualada,Granada));
+
+ Assertions.assertEquals(new BigDecimal(664.0),distancia.setScale(0, RoundingMode.HALF_UP));
+    }}
