@@ -11,6 +11,8 @@ import java.math.RoundingMode;
 public class haversineTest {
     @Test
     public void cuandoDistanciaGranada() {
+        //DECLARO LAS VARIABLES lat1 y long1 PARA LA PRIMERA POSICION Igualada.
+        //DECLARO LAS VARIABLES lat2 y long2 PARA LA SEGUNDA POSICION Granada.
         BigDecimal lat1 = new BigDecimal(41.57879);
         BigDecimal long1 = new BigDecimal(1.617221);
         BigDecimal lat2 = new BigDecimal(37.176487F);
