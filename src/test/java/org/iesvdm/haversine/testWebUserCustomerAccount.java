@@ -17,7 +17,7 @@ public class testWebUserCustomerAccount {
         Supplier sup2=new Supplier();
 
         Address address1 = new Address("C/ Portugal,Nº 4,661010103",12,"Lisboa","Portugal");
-        //Comentario
+
         Phone ph1 =new Phone("2222","22222");
         Phone ph2 =new Phone("3333","33333");
 
