@@ -10,14 +10,15 @@ import java.math.RoundingMode;
 
 public class haversineTest {
     @Test
-    public void cuandoDistanciaGranada(){
-    BigDecimal lat1=new BigDecimal(41.57879);
-    BigDecimal long1=new BigDecimal(1.617221);
-    BigDecimal lat2=new BigDecimal(37.176487F);
-    BigDecimal long2=new BigDecimal(-3.597929);
-    Posicion Igualada = new Posicion(lat1,  long1);
-   Posicion Granada = new Posicion(lat2, long2);
-   BigDecimal distancia =(Igualada.distanciaKM(Igualada,Granada));
+    public void cuandoDistanciaGranada() {
+        BigDecimal lat1 = new BigDecimal(41.57879);
+        BigDecimal long1 = new BigDecimal(1.617221);
+        BigDecimal lat2 = new BigDecimal(37.176487F);
+        BigDecimal long2 = new BigDecimal(-3.597929);
+        Posicion Igualada = new Posicion(lat1, long1);
+        Posicion Granada = new Posicion(lat2, long2);
+        BigDecimal distancia = (Igualada.distanciaKM(Igualada, Granada));
 
- Assertions.assertEquals(new BigDecimal(664.0),distancia.setScale(0, RoundingMode.HALF_UP));
-    }}
+        Assertions.assertEquals(new BigDecimal(664.0), distancia.setScale(0, RoundingMode.HALF_UP));
+    }
+}
